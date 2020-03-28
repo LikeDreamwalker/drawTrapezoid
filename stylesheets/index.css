@@ -1,3 +1,7 @@
+body {
+    font-family: sans-serif;
+}
+
 /* 隐藏边框 */
 * {
     border: 0;
