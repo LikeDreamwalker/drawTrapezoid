@@ -1,0 +1,87 @@
+/* 隐藏边框 */
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/* 背景样式 */
+.background {
+    background-color: rgb(140, 222, 255);
+    background-size: cover;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    color: white;
+}
+
+/* 标题的样式 */
+h1 {
+    font-size: 4vh;
+    font-weight: normal;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+}
+
+/* logo的样式 */
+img.logo {
+    margin-top: 2vh;
+    height: 5vh;
+}
+
+/* label标签的样式 */
+.title {
+    font-size: 2.3vh;
+}
+
+/* input标签的样式 */
+.input {
+    height: 3vh;
+    font-size: 2.5vh;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+    border-radius: 4px;
+    border: 1px solid #00bbff;
+
+}
+
+/* 按钮的样式 */
+#button {
+    height: 5vh;
+    width: 25vw;
+    font-size: 3vh;
+    color: #00bbff;
+    background-color: #fff;
+    border-radius: 6px;
+    border: 1px solid #00bbff;
+}
+
+/* 梯形div的样式 */
+#trapezoid {
+    display: block;
+    margin: 0 auto;
+    margin-top: 5vh;
+    /* 梯形的上底宽度（短） */
+    width: 30px;
+    /* height必须为0 */
+    height: 0px;
+    /* 
+        因为border特性，四个梯形的高必须存在
+        且四个梯形的高相互关联
+    */
+    /* 上-梯形的高 */
+    border-top-width: 0px;
+    /* 下-梯形的高 */
+    border-bottom-width: 50px;
+    /* 左-梯形的高 */
+    border-left-width: 50px;
+    /* 右-梯形的高 */
+    border-right-width: 50px;
+    /* 填充 */
+    border-style: solid;
+    /* 隐藏四个梯形 */
+    border-color: transparent transparent;
+    /* 为底部梯形上色 */
+    border-bottom-color: #00bbff;
+}
