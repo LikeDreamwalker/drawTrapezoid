@@ -16,9 +16,12 @@ function drawTrapezoid() {
         alert("需要输入左边与右边的两个角度（0-180）");
         return false;
     }
-    if ((tTop > 50) || (tHeight > 50)) {
+    if ((tTop > 150) || (tHeight > 150)) {
         alert("这么大的梯形可能放不下！");
         return false;
+    }
+    if (tTop > 100 || tHeight > 100 || tLeftAngle > 130 || tRightAngle > 130) {
+        alert("当前尺寸在部分设备上可能显示不全");
     }
     // 通过三角函数求得实际在 CSS 中 border-left-width 的宽度
     var borderLeftWidth = function (tHeight, tLeftAngle) {
@@ -56,7 +59,7 @@ function drawTrapezoid() {
             tRA -= 90;
             // 此时与底角运算相反
             var temp = tH * Math.tan(tRA * Math.PI / 180);
-            console.log(temp.toFixed(2));
+            // console.log(temp.toFixed(2));
             // 对运算结果保留两位（四舍五入）
             return temp.toFixed(2);
         }
@@ -64,7 +67,7 @@ function drawTrapezoid() {
         else {
             // 底角直接进行运算
             var temp = tH / Math.tan(tRA * Math.PI / 180);
-            console.log(temp.toFixed(2));
+            // console.log(temp.toFixed(2));
             // 对运算结果保留两位（四舍五入）
             return temp.toFixed(2);
         }

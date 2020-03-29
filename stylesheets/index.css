@@ -9,6 +9,11 @@ body {
     padding: 0;
 }
 
+/* 隐藏溢出 */
+div {
+    overflow: hidden;
+}
+
 /* 背景样式 */
 .background {
     background-color: rgb(140, 222, 255);
@@ -65,6 +70,11 @@ img.logo {
 #trapezoid {
     display: block;
     margin: 0 auto;
+    /* 通过 max-width: 限制梯形尺寸;但是 height 值无法被限制 */
+    /* vw 与 vh 单位不同，导致作图不够精确 */
+    /* max-width: 20vw; */
+    /* max height */
+    /* max-height: 20vh; */
     margin-top: 5vh;
     /* 梯形的上底宽度（短） */
     width: 30px;
