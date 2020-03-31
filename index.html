@@ -7,6 +7,7 @@
     <title>drawTrapezoid! - LikeDreamwalker</title>
     <script type="text/javascript" src="scripts/index.js"></script>
     <link rel="stylesheet" href="stylesheets/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <script>
     </script>
 </head>
@@ -15,36 +16,39 @@
     <!-- This is background -->
     <div class="background">
         <!-- logo -->
-        <img src="images/WebLOGO.png" alt="" class="logo">
+        <img src="images/WebLOGO.png" alt="" class="logo animated fadeInUp duration-1s">
         <!-- 文本区，屏蔽右键 -->
         <div class="text" οndblclick="return false;" onselectstart="return false">
             <!-- h1 -->
-            <h1>
+            <h1 class=" animated bounceIn delay-1s duration-2s">
                 <strong>draw</strong>Trapezoid!
             </h1>
             <!-- 输入，使用行内元素排列 -->
-            <label for="tTop" class="title">梯形的顶边长度（px）</label>
-            <br>
-            <input type="text" id="tTop" class="input">
-            <br>
+            <div class="animated fadeInUp delay-2s duration-1s">
+                <label for="tTop" class="title">梯形的顶边长度（px）</label>
+                <br>
+                <input type="text" id="tTop" class="input">
+                <br>
 
-            <label for="tHeight" class="title">梯形的高（px）</label>
-            <br>
-            <input type="text" id="tHeight" class="input">
-            <br>
+                <label for="tHeight" class="title">梯形的高（px）</label>
+                <br>
+                <input type="text" id="tHeight" class="input">
+                <br>
 
-            <label for="tLeftAngle" class="title">梯形左边的一个角（角度）</label>
-            <br>
-            <input type="text" id="tLeftAngle" class="input">
-            <br>
+                <label for="tLeftAngle" class="title">梯形左边的一个角（角度）</label>
+                <br>
+                <input type="text" id="tLeftAngle" class="input">
+                <br>
 
-            <label for="tRightAngle" class="title">梯形右边的一个角（角度）</label>
-            <br>
-            <input type="text" id="tRightAngle" class="input">
-            <br>
+                <label for="tRightAngle" class="title">梯形右边的一个角（角度）</label>
+                <br>
+                <input type="text" id="tRightAngle" class="input">
+                <br>
 
-            <button onclick="drawTrapezoid()" id="button">Draw!</button>
-            <div id="trapezoid">
+                <button onclick="drawTrapezoid()" id="button">Draw!</button>
+            </div>
+
+            <div id="trapezoid" class="trapezoidAnimated">
             </div>
 
         </div>

@@ -80,4 +80,10 @@ function drawTrapezoid() {
     draw.style.borderLeftWidth = borderLeftWidth(tHeight, tLeftAngle) + "px";
     draw.style.borderRightWidth = borderRightWidth(tHeight, tRightAngle) + "px";
     draw.style.borderBottomWidth = tHeight + "px";
+    // 移除trapezoid的类名
+    draw.classList.remove("trapezoidAnimated");
+    // offsetWidth 元素宽度（布局）
+    // void expression
+    void draw.offsetWidth;
+    draw.classList.add("trapezoidAnimated");
 }
