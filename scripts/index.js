@@ -46,7 +46,6 @@ function drawTrapezoid() {
             // 对运算结果保留两位（四舍五入）
             return temp.toFixed(2);
         }
-
     }
     // 通过三角函数求得实际在 CSS 中 border-right-width 的宽度
     var borderRightWidth = function (tHeight, tRightAngle) {

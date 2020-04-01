@@ -1,9 +1,4 @@
-body {
-    font-family: sans-serif;
-}
-
 /* 从 animate.css 导入的 bounceIn */
-
 @-webkit-keyframes bounceIn {
 
     from,
@@ -102,6 +97,12 @@ body {
     -webkit-animation-name: bounceIn;
     animation-name: bounceIn;
 }
+
+/* 设定无衬线字体 */
+body {
+    font-family: sans-serif;
+}
+
 /* 隐藏边框 */
 * {
     border: 0;
@@ -152,7 +153,6 @@ img.logo {
     margin-bottom: 2vh;
     border-radius: 4px;
     border: 1px solid #00bbff;
-
 }
 
 /* 按钮的样式 */
@@ -175,7 +175,7 @@ img.logo {
     /* max-width: 20vw; */
     /* max height */
     /* max-height: 20vh; */
-    margin-top: 5vh;
+    margin-top: 10vh;
     /* 梯形的上底宽度（短） */
     width: 30px;
     /* height必须为0 */
@@ -198,7 +198,7 @@ img.logo {
     border-color: transparent transparent;
     /* 为底部梯形上色 */
     border-bottom-color: #00bbff;
-}    
+}
 
 .trapezoidAnimated {
     /* 动画效果 */
